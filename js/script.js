@@ -1,4 +1,5 @@
-const titleClickHandler = function(event)  {
+const titleClickHandler = function(event) {
+
   console.log('Link was clicked!');
 
   /* remove class 'active' from all article links  */
@@ -12,11 +13,12 @@ const titleClickHandler = function(event)  {
   /* find the correct article using the selector (value of 'href' attribute) */
 
   /* add class 'active' to the correct article */
-}
+};
 
 const links = document.querySelectorAll('.titles a');
 
-for(let link of links) {
+for(let link of links){
   link.addEventListener('click', titleClickHandler);
-    console.log(event);
-}
+
+    console.log('event');
+  }
