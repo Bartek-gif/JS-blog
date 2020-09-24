@@ -17,8 +17,6 @@ event.preventDefault();
 
     console.log('clickedElement (with plus): ' + clickedElement);
 
-    wyszukujący artykuł o danym atrybucie href
-
   /* [DONE] remove class 'active' from all articles links */
 
     for(let activeArticle of activeArticles) {
