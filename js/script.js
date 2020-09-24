@@ -43,7 +43,7 @@ event.preventDefault();
 
   /* find the correct article using the selector (value of 'href' attribute) */
 
-  const targetArticle = document.querySelector();
+  const targetArticle = document.querySelector('active');
 
     var div1 = document.getElementById("div1");
 
