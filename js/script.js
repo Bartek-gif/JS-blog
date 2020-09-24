@@ -19,6 +19,8 @@ event.preventDefault();
 
   /* [DONE] remove class 'active' from all articles links */
 
+    const activeArticles=querySelectorAll
+
     for(let activeArticle of activeArticles) {
       activeArticle.classList.remove('active'); }
 
