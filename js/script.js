@@ -24,21 +24,39 @@ event.preventDefault();
     for(let activeArticle of activeArticles) {
       activeArticle.classList.remove('active'); }
 
-  alert(a); // pokaże wartość atrybutu "align" dla elementu o id="div1"
 
     console.log('clickedElement:', clickedElement);
 
   /* get 'href' attribute from the clicked link */
 
-  
+    const articleSelector = document.querySelectorAll('href');
+
+    atrybut = element.getAttribute('href')
+
+    var div1 = document.getElementById("div1");
+
+    var a = div1.getAttribute("align");
+
+    console.log('articleSelector');
+
+    alert(a); // pokaże wartość atrybutu "align" dla elementu o id="div1"
 
   /* find the correct article using the selector (value of 'href' attribute) */
 
+  const targetArticle = document.querySelector();
+
+    var div1 = document.getElementById("div1");
+
+    var a = div1.getAttribute("align");
+
+      console.log('targetArticle');
+
   /* add class 'active' to the correct article */
-};
+
 
 const links = document.querySelectorAll('.titles a');
 
 for(let link of links)  {
   link.addEventListener('click', titleClickHandler);
-  }
+}
+ }
