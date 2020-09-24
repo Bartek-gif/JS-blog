@@ -9,30 +9,31 @@ event.preventDefault();
 
   const activeLinks = document.querySelectorAll('.titles a.active');
 
-  /* [IN PROGRESS] add class 'active' to the clicked link */
-
-  const clickedElement = this;
-    activeLink.classList.Add('active');
-
-    console.log('clickedElement:', clickedElement);
-
-  /* [DONE] remove class 'active' from all articles links */
-
   for(let activeLink of activeLinks)  {
     activeLink.classList.remove('active');
   }
 
+  /* [IN PROGRESS] add class 'active' to the clicked link */
+
+    console.log('clickedElement (with plus): ' + clickedElement);
+
+    clickedElement.classList.add('active');
+
+  /* [DONE] remove class 'active' from all articles links */
+
+    for(let activeArticle of activeArticles) {
+      activeArticle.classList.remove('active'); }
+
+  alert(a); // pokaże wartość atrybutu "align" dla elementu o id="div1"
+
+    console.log('clickedElement:', clickedElement);
+
   /* get 'href' attribute from the clicked link */
 
-  const articleSelector = href;
+  const link = document.articleSelector("a");
     activeLink.classList.Add('href')
-      atrybut = element.getAttribute(nazwaAtrybutu)
-        var div1 = document.getElementById("href");
-        var a = div1.getAttribute("href");
-          alert(a);
 
-          console.log('artocleSelector');
-
+          console.log('articleSelector');
 
   /* find the correct article using the selector (value of 'href' attribute) */
 
