@@ -30,10 +30,7 @@ event.preventDefault();
 
   /* get 'href' attribute from the clicked link */
 
-  const link = document.articleSelector("a");
-    activeLink.classList.Add('href')
-
-          console.log('articleSelector');
+  
 
   /* find the correct article using the selector (value of 'href' attribute) */
 
