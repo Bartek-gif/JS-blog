@@ -17,7 +17,7 @@ event.preventDefault();
 
     console.log('clickedElement (with plus): ' + clickedElement);
 
-    clickedElement.classList.add('active');
+    wyszukujący artykuł o danym atrybucie href
 
   /* [DONE] remove class 'active' from all articles links */
 
@@ -52,7 +52,6 @@ event.preventDefault();
       console.log('targetArticle');
 
   /* add class 'active' to the correct article */
-
 
 const links = document.querySelectorAll('.titles a');
 
