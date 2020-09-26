@@ -1,49 +1,50 @@
 const titleClickHandler = function(event) {
 
   console.log('Link was clicked!');
+
   console.log('event');
 
 event.preventDefault();
 
 /* [DONE] remove class 'active' from all article links  */
 
-  const activeLinks = document.querySelectorAll('.titles a.active');
+const activeLinks = document.querySelectorAll('.titles a.active');
 
   for(let activeLink of activeLinks)  {
     activeLink.classList.remove('active');
   }
 
-  /* [IN PROGRESS] add class 'active' to the clicked link */
+/* [IN PROGRESS] add class 'active' to the clicked link */
 
-    const clickedElement = this;
+const clickedElement = this;
 
-    console.log('clickedElement (with plus): ' + clickedElement);
+  console.log('clickedElement (with plus): ' + clickedElement);
 
-    clickedElement.classList.add('active');
+  clickedElement.classList.add('active');
 
-  /* [DONE] remove class 'active' from all articles */
+/* [DONE] remove class 'active' from all articles */
 
-    const activeArticles = document.querySelectorAll('.posts article.active');
+const activeArticles = document.querySelectorAll('.posts article.active');
 
-    for(let activeArticle of activeArticles) {
+  for(let activeArticle of activeArticles) {
       activeArticle.classList.remove('active');
    }
 
-    console.log('clickedElement:', clickedElement);
+   console.log('clickedElement:', clickedElement);
 
-  /* get 'href' attribute from the clicked link */
+/* get 'href' attribute from the clicked link */
 
-    const articleSelector = clickedElement.getAttribute('href');
+const articleSelector = clickedElement.getAttribute('href');
 
-    console.log(articleSelector);
+  console.log(articleSelector);
 
-  /* find the correct article using the selector (value of 'href' attribute) */
+/* find the correct article using the selector (value of 'href' attribute) */
 
-    const targetArticle = document.querySelector(articleSelector);
+const targetArticle = document.querySelector(articleSelector);
 
-    console.log(targetArticle);
+  console.log(targetArticle);
 
-  /* add class 'active' to the correct article */
-    targetArticle.classList.add('active');
+/* add class 'active' to the correct article */
+  targetArticle.classList.add('active');
 
 }
