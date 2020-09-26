@@ -15,47 +15,35 @@ event.preventDefault();
 
   /* [IN PROGRESS] add class 'active' to the clicked link */
 
+    const clickedElement = this;
+
     console.log('clickedElement (with plus): ' + clickedElement);
 
-  /* [DONE] remove class 'active' from all articles links */
+    clickedElement.classList.add('active');
 
-    const activeArticles = querySelectorAll
+  /* [DONE] remove class 'active' from all articles */
+
+    const activeArticles = document.querySelectorAll('.posts article.active');
 
     for(let activeArticle of activeArticles) {
-      activeArticle.classList.remove('active'); }
-
+      activeArticle.classList.remove('active');
+   }
 
     console.log('clickedElement:', clickedElement);
 
   /* get 'href' attribute from the clicked link */
 
-    const articleSelector = document.querySelectorAll('href');
+    const articleSelector = clickedElement.getAttribute('href');
 
-    atrybut = element.getAttribute('href')
-
-    var div1 = document.getElementById("div1");
-
-    var a = div1.getAttribute("align");
-
-    console.log('articleSelector');
-
-    alert(a); // pokaże wartość atrybutu "align" dla elementu o id="div1"
+    console.log(articleSelector);
 
   /* find the correct article using the selector (value of 'href' attribute) */
 
-  const targetArticle = document.querySelector('active');
+    const targetArticle = document.querySelector(articleSelector);
 
-    var div1 = document.getElementById("div1");
-
-    var a = div1.getAttribute("align");
-
-      console.log('targetArticle');
+    console.log(targetArticle);
 
   /* add class 'active' to the correct article */
+    targetArticle.classList.add('active');
 
-const links = document.querySelectorAll('.titles a');
-
-for(let link of links)  {
-  link.addEventListener('click', titleClickHandler);
 }
- }
