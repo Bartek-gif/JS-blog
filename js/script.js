@@ -14,8 +14,6 @@ const activeLinks = document.querySelectorAll('.titles a.active');
 
 /* [IN PROGRESS] add class 'active' to the clicked link */
 
-const clickedElement = this;
-
   console.log('clickedElement (with plus): ' + clickedElement);
 
   clickedElement.classList.add('active');
@@ -26,9 +24,7 @@ const activeArticles = document.querySelectorAll('.posts article.active');
 
   for(let activeArticle of activeArticles) {
       activeArticle.classList.remove('active');
-   }
-
-   console.log('clickedElement:', clickedElement);
+}
 
 /* get 'href' attribute from the clicked link */
 
@@ -43,6 +39,12 @@ const targetArticle = document.querySelector(articleSelector);
   console.log(targetArticle);
 
 /* add class 'active' to the correct article */
-  targetArticle.classList.add('active');
 
+  targetArticle.classList.add('active');
+}
+
+  const links = document.querySelectorAll('.titles a');
+
+  for(let link of links)  {
+  link.addEventListener('click', titleClickHandler);
 }
