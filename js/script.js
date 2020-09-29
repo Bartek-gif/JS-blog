@@ -47,19 +47,21 @@ let html ='';
 
 for(let article of articles){
 
+/* find the title element */
+
+/* get the article id */
+const articleId = article.getAttribute('id');
+
   /* find the title element */
 
-  /* get the article id */
+/* get the title from the title element */
+const articleTitle = article.querySelector(optTitleSelector).innerHTML;
 
-    const articleId = article.getAttribute('id');
+/* create HTML of the link */
+const linkHTML = '<li><a href="#' + articleId '"><span>' +  articleTitle + '</span></a></li>';
 
-    /* find the title element */
 
-    /* get the title from the title element */
-
-    /* create HTML of the link */
-
-    /* insert link into titleList */
+/* insert link into titleList */
 
 }
 
