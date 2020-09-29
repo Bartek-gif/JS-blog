@@ -69,5 +69,8 @@ console.log(html);
 
 titleList.innerHTML = html;
 
+const link = document.querySelectorAll('.titles a');
+
+
 generateTitleLinks();
 }
