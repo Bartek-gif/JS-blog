@@ -37,8 +37,8 @@ const optArticleSelector = '.post',
 function generateTitleLinks() {
 
   /* remove contents of titleList */
-const titleList = document.querySelectory(optTitleSelector);
-titleList.innerHTML = '';
+  const titleList = document.querySelector(optTitleListSelector);
+   titleList.innerHTML = '';
 
 const articles = document.querySelectorAll(optArticleSelector);
 
@@ -58,24 +58,22 @@ const articleId = article.getAttribute('id');
 const articleTitle = article.querySelector(optTitleSelector).innerHTML;
 
 /* create HTML of the link */
-const linkHTML = '<li><a href="#' + articleId '"><span>' +  articleTitle + '</span></a></li>';
+ const linkHTML = '<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>';
 
 
 /* insert link into titleList */
-html = html + likHTML;
-console.log(html);
+html = html + linkHTML;
+    console.log(html);
 
-}
+  }
 
 titleList.innerHTML = html;
 
 const link = document.querySelectorAll('.titles a');
 
 for(let link of links){
-  link.addEventListener('click', titileClickHandler);
- }
+    link.addEventListener('click', titleClickHandler);
+  }
 }
 
 generateTitleLinks();
-
-}
