@@ -62,8 +62,12 @@ const linkHTML = '<li><a href="#' + articleId '"><span>' +  articleTitle + '</sp
 
 
 /* insert link into titleList */
+html = html + likHTML;
+console.log(html);
 
 }
+
+titleList.innerHTML = html;
 
 generateTitleLinks();
 }
