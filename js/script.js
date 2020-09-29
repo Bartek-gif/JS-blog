@@ -73,7 +73,9 @@ const link = document.querySelectorAll('.titles a');
 
 for(let link of links){
   link.addEventListener('click', titileClickHandler);
-
+ }
+}
 
 generateTitleLinks();
+
 }
