@@ -114,7 +114,8 @@ const titleClickHandler = function(event) {
     console.log(html);
 
 /* END LOOP: for each tag */
-
+  for(let tag of articleTagsArray){
+  }
 
 /* insert HTML of all the links into the tags wrapper */
 
