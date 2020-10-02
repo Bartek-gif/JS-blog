@@ -141,11 +141,11 @@ const href = clickedElement.getAttribute('href');
 const tagsActiveLinks = document.querySelectorAll('a.active[href^="#tag-"]');
 
 /* START LOOP: for each active tag link */
-
+for(const tagsActiveLinks of tagsActiveLink) {
 /* remove class active */
 
 /* END LOOP: for each active tag link */
-
+ }
 /* find all tag links with "href" attribute equal to the "href" constant */
 
 /* START LOOP: for each found tag link */
