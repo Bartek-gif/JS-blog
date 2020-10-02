@@ -132,7 +132,7 @@ const titleClickHandler = function(event) {
   const clickedElement = this;
 
 /* make a new constant "href" and read the attribute "href" of the clicked element */
-const href = clickedElement.getAttribute('href');
+  const href = clickedElement.getAttribute('href');
 
 /* make a new constant "tag" and extract tag from the "href" constant */
   const tag = href.replace('#tag-', '');
@@ -152,11 +152,13 @@ tagActiveLinks.classList.remove('active');
   const tagsLinks = document.querySelectorAll('a[href="' + href + '"]');
 
 /* START LOOP: for each found tag link */
+  for(const tagLinks of tagLink){
 
 /* add class active */
+  tagLinks.classList.add('active');
 
 /* END LOOP: for each found tag link */
-
+}
 /* execute function "generateTitleLinks" with article selector as argument */
   }
 
