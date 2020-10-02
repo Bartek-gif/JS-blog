@@ -138,15 +138,18 @@ const href = clickedElement.getAttribute('href');
   const tag = href.replace('#tag-', '');
 
 /* find all tag links with class active */
-const tagsActiveLinks = document.querySelectorAll('a.active[href^="#tag-"]');
+  const tagsActiveLinks = document.querySelectorAll('a.active[href^="#tag-"]');
 
 /* START LOOP: for each active tag link */
-for(const tagsActiveLinks of tagsActiveLink) {
+  for(const tagsActiveLinks of tagsActiveLink) {
+
 /* remove class active */
+tagActiveLinks.classList.remove('active');
 
 /* END LOOP: for each active tag link */
  }
 /* find all tag links with "href" attribute equal to the "href" constant */
+  const tagsLinks = document.querySelectorAll('a[href="' + href + '"]');
 
 /* START LOOP: for each found tag link */
 
