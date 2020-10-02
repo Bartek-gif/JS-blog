@@ -102,11 +102,11 @@ const titleClickHandler = function(event) {
 
 
 /* START LOOP: for each tag */
-  for(let tag of articleTagsArray);
+  for(let tag of articleTagsArray) {
     console.log(tag);
 
 /* generate HTML of the link */
-  const linkHTML = '<li><a href="# tag' + design  + '"><span>' + tutorials + '</span></a></li>';
+  const linkHTML = '<li><a href="#tag-' + tag  + '"> ' + tag + ' </a></li>';
 
 
 /* add generated code to html variable */
@@ -114,11 +114,10 @@ const titleClickHandler = function(event) {
     console.log(html);
 
 /* END LOOP: for each tag */
-  for(let tag of articleTagsArray){
   }
 
 /* insert HTML of all the links into the tags wrapper */
-
+  titleList.innerHTML = html
 
 /* END LOOP: for every article: */
 }
