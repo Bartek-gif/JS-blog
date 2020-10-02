@@ -138,6 +138,7 @@ const href = clickedElement.getAttribute('href');
   const tag = href.replace('#tag-', '');
 
 /* find all tag links with class active */
+const tagsActiveLinks = document.querySelectorAll('a.active[href^="#tag-"]');
 
 /* START LOOP: for each active tag link */
 
