@@ -35,7 +35,7 @@ const titleClickHandler = function(event) {
     optTitleListSelector = '.titles';
     optArticleTagsSelector = '.post-tags .list';
 
-    function generateTitleLinks() {
+function generateTitleLinks() {
 
 /* remove contents of titleList */
   const titleList = document.querySelector(optTitleListSelector);
@@ -77,7 +77,7 @@ const titleClickHandler = function(event) {
     }
       }
 
-  generateTitleLinks();
+generateTitleLinks();
 
   function generateTags() {
 
@@ -165,8 +165,8 @@ tagActiveLinks.classList.remove('active');
   }
 
 function generateTitleLinks(){
-
   
+
 
   function addClickListenersToTags(){
 /* find all links to tags */
