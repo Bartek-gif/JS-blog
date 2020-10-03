@@ -35,17 +35,19 @@ const optArticleSelector = '.post',
   optTitleSelector = '.post-title',
   optTitleListSelector = '.titles';
 
-function generateTitleLinks((customSelector = ''){
+function generateTitleLinks(customSelector = ''){
 
 /* remove contents of titleList */
   const titleList = document.querySelector(optTitleListSelector);
-    let html = '';
+  let html = '';
+
+/* for each article */
 
   const articles = document.querySelectorAll(optArticleSelector);
 
 /* for each article */
-  const articles = document.querySelectorAll(optArticleSelector + customSelector);
-    let html = '';
+  const titleList = document.querySelectorAll(optArticleSelector);
+  let html = '';
 
   for(let article of articles){
 
