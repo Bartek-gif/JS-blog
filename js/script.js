@@ -1,4 +1,4 @@
-const titleClickHandler = function(event) {
+  const titleClickHandler = function(event) {
 
   event.preventDefault();
 
@@ -11,31 +11,36 @@ const titleClickHandler = function(event) {
     activeLink.classList.remove('active');
   }
 /* [DONE] add class 'active' to the clicked link */
+
   clickedElement.classList.add('active');
 
 /* [DONE] remove class 'active' from all articles */
+
   const activeArticles = document.querySelectorAll('.posts article.active');
 
   for(let activeArticle of activeArticles) {
     activeArticle.classList.remove('active');
   }
 
-/* get 'href' attribute from the clicked link */
+/* [DONE] get 'href' attribute from the clicked link */
+
   const articleSelector = clickedElement.getAttribute('href');
 
 /* find the correct article using the selector (value of 'href' attribute) */
+
   const targetArticle = document.querySelector(articleSelector);
 
-/* add class 'active' to the correct article */
+/* [DONE] add class 'active' to the correct article */
+
   targetArticle.classList.add('active');
-  }
+};
 
   const optArticleSelector = '.post',
     optTitleSelector = '.post-title',
     optTitleListSelector = '.titles';
     optArticleTagsSelector = '.post-tags .list';
 
-function generateTitleLinks() {
+function generateTitleLinks(customSelector = ''){
 
 /* remove contents of titleList */
   const titleList = document.querySelector(optTitleListSelector);
@@ -163,10 +168,6 @@ tagActiveLinks.classList.remove('active');
 }
 /* execute function "generateTitleLinks" with article selector as argument */
   }
-
-function generateTitleLinks(){
-  
-
 
   function addClickListenersToTags(){
 /* find all links to tags */
