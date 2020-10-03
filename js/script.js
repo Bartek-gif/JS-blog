@@ -42,7 +42,7 @@ function generateTitleLinks(customSelector = ''){
   let html = '';
 
 /* for each article */
-  const articles = document.querySelectorAll(optArticleSelector);
+  const articles = document.querySelectorAll(optArticleSelector + customSelector);
 
   for(let article of articles){
 
