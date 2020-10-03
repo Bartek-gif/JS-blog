@@ -114,7 +114,7 @@ console.log(html);
 }
 
 /* insert HTML of all the links into the tags wrapper */
-      titleList.innerHTML = html;
+  titleList.innerHTML = html;
 
 /* END LOOP: for every article: */
   }
