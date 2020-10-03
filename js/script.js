@@ -164,6 +164,10 @@ tagActiveLinks.classList.remove('active');
 /* execute function "generateTitleLinks" with article selector as argument */
   }
 
+function generateTitleLinks(){
+
+  
+
   function addClickListenersToTags(){
 /* find all links to tags */
 
