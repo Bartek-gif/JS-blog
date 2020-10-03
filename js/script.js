@@ -39,12 +39,14 @@ const optArticleSelector = '.post',
 function generateTitleLinks(customSelector = ''){
 
 /* remove contents of titleList */
+
 const titleList = document.querySelector(optTitleListSelector);
 titleList.innerHTML = '';
 
+/* for each article */
+
 const articles = document.querySelectorAll(optArticleSelector + customSelector);
 
-/* for each article */
 let html = '';
 
   for(let article of articles){
@@ -160,7 +162,11 @@ tagActiveLinks.classList.remove('active');
 /* END LOOP: for each found tag link */
 }
 /* execute function "generateTitleLinks" with article selector as argument */
-  }
+  const customSelector = '[data~="' + tag + '"]';
+  generateTitleLinks(customSelector);
+  console.log('customSelector: ', customSelector);
+
+}
 
   function addClickListenersToTags(){
 /* find all links to tags */
