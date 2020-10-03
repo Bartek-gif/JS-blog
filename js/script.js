@@ -35,16 +35,16 @@ const optArticleSelector = '.post',
   optTitleSelector = '.post-title',
   optTitleListSelector = '.titles';
 
-function generateTitleLinks(){
+function generateTitleLinks(customSelector = ''){
 
 /* remove contents of titleList */
-const titleList = document.querySelector(optTitleListSelector);
-titleList.innerHTML = '';
 
-const articles = document.querySelectorAll(optArticleSelector);
+const titleList = document.querySelector(optTitleListSelector);
+let html = '';
 
 /* for each article */
-let html = '';
+
+const articles = document.querySelectorAll(optArticleSelector + customSelector);
 
 for(let article of articles){
 
@@ -75,9 +75,10 @@ for(let link of links){
 
 generateTitleLinks();
 
-generateTags()
+function generateTags()
 
   function tagClickHandler(event){
+
 /* prevent default action for this event */
   event.preventDefault();
 
