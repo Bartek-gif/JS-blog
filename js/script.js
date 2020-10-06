@@ -86,12 +86,12 @@ generateTitleLinks();
       min: 999999
   };
   for(let tag in tags){
-  console.log(tag + ' is used ' + tags[tag] + ' times');
-  params.max = Math.max(tags[tag], params.max);
-  params.min = Math.min(tags[tag], params.min);
-}
-    return params;
+    console.log(tag + ' is used ' + tags[tag] + ' times');
+    params.max = Math.max(tags[tag], params.max);
+    params.min = Math.min(tags[tag], params.min);
   }
+  return params;
+}
 
   function generateTags() {
 
