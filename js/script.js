@@ -172,7 +172,3 @@ generateTags();
 /* END LOOP: for each link */
   }
 }
-
-addClickListenersToTags();
-
-}
