@@ -38,6 +38,8 @@
     optArticleTagsSelector = '.post-tags .list',
     optArticleAuthorsSelector = '.post-author';
     optTagsListSelector ='..tags.list';
+    optCloudClassCount = 5;
+    optCloudClassPrefix = 'tags-size';
 
   function generateTitleLinks(customSelector = '') {
 
@@ -77,6 +79,11 @@
 }
 
 generateTitleLinks();
+
+  function calculateTagsParams(tags) {
+    const params = (max = 0);
+    return params
+  }
 
   function generateTags() {
 
