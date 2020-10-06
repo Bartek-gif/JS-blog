@@ -149,6 +149,7 @@ let allTagsHTML = '';
 for(let tag in allTags){
 /* [NEW] generate code of a link and add it to allTagsHTML */
   const tagLinkHTML = '<li><a href="#tag-' + tag + '" class = "' + optCloudClassPrefix + calculateTagClass(allTags[tag], tagsParams) + '">' + tag + '</a></li>';
+  consolo.log('tagLinkHTML:', tagLinkHTML);
   allTagsHTML += tag + ' (' + allTags[tag] + ') ';
 }
 /* [NEW] END LOOP: for each tag in allTags: */
