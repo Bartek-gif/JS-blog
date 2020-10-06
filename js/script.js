@@ -81,7 +81,10 @@
 generateTitleLinks();
 
   function calculateTagsParams(tags) {
-    const params = (max = 0);
+    const params = {
+      max: 0 ,
+      min: 999999
+  };
     return params
   }
 
