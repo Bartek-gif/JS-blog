@@ -39,7 +39,7 @@
     optArticleAuthorsSelector = '.post-author';
     optTagsListSelector ='..tags.list';
     optCloudClassCount = 5;
-    optCloudClassPrefix = 'tags-size';
+    optCloudClassPrefix = 'tag-size-';
 
   function generateTitleLinks(customSelector = '') {
 
@@ -91,6 +91,10 @@ generateTitleLinks();
     params.min = Math.min(tags[tag], params.min);
   }
   return params;
+}
+
+function calculateTagClass (count, params) {
+  
 }
 
   function generateTags() {
@@ -203,3 +207,5 @@ generateTags();
 /* END LOOP: for each link */
   }
 }
+
+addClickListenersToTags();
