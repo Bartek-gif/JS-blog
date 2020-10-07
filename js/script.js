@@ -143,7 +143,7 @@ function calculateTagClass (count, params) {
 /* [NEW] find list of tags in right column */
  const tagList = document.querySelector('.tags');
 
- const tagsParms = calculateTagsParams(allTags);
+ const tagsParms = calculateTagsParams(allTag);
  console.log('tagsParms:', tagsParms);
 
  /* [NEW] create variable for all links HTML code */
